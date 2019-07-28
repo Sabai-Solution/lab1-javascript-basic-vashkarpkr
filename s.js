@@ -26,6 +26,7 @@ function submitFuntion() {
 if(append!=""){
 	alert(append);
 	return false;
+	//local change
 }
 else{
 	return  true;
