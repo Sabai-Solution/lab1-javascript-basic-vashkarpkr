@@ -4,26 +4,28 @@ function submitFuntion() {
 	var passText=document.getElementsByName("pass")[0].value;
 
 	var append = "";
-	if(emailText=""){
-		append = "Email";
+	if(emailText==""){
+		append = append + "Email";
 
 	}
-	if (userText="") {
+	if (userText=="") {
 		if(append!=""){
 			append = append + " and";
 		}
 		append= append + " username";
 	}
-	if (passText="") {
+	if (passText=="") {
 		if(append!=""){
 			append = append + " and";
 		}
 		append= append + " password";
 	}
-	append = append + "cannot be empty";
 
 
 if(append!=""){
+
+	append = append + "cannot be empty";
+
 	alert(append);
 	return false;
 	//local change
